@@ -1,10 +1,9 @@
-import DemoComponent from "./DemoComponent";
-
+import React from "react";
+import "./App.css";
 
 function App() {
   return (
     <div>
-   <DemoComponent />
     </div>
   );
 }
