@@ -2,7 +2,6 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
@@ -63,11 +62,14 @@ function Header(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
-      <CssBaseline />
+    <>
       <AppBar
         component="nav"
-        sx={{ backgroundColor: "#4478fe", borderBottom: "2px solid white" }}
+        sx={{
+          backgroundColor: "#4478fe",
+          borderBottom: "2px solid white",
+          position: "relative",
+        }}
       >
         <Toolbar>
           <IconButton
@@ -89,7 +91,7 @@ function Header(props) {
                 sm: "block",
               },
               fontFamily: "Mignon-Regular",
-              fontSize: 25,
+              fontSize: 40,
               fontWeight: "semiBold",
             }}
           >
@@ -139,7 +141,7 @@ function Header(props) {
           {drawer}
         </Drawer>
       </nav>
-    </Box>
+    </>
   );
 }
 
