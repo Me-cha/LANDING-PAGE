@@ -68,7 +68,6 @@ function Header(props) {
         sx={{
           backgroundColor: "#4478fe",
           borderBottom: "2px solid white",
-          position: "relative",
         }}
       >
         <Toolbar>
