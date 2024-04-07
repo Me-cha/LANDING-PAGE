@@ -13,6 +13,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import MediumLogoWhite from "../../assets/images/mediumLogoWhite.png";
 
 const drawerWidth = 240;
 const navItems = ["Our Story", "Membership", "Write", "Sign In"];
@@ -80,6 +81,11 @@ function Header(props) {
           >
             <MenuIcon />
           </IconButton>
+          <img
+            src={MediumLogoWhite}
+            alt="Medium Logo"
+            style={{ height: "35px" }}
+          />
           <Typography
             variant="h6"
             component="div"
