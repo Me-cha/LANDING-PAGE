@@ -29,13 +29,13 @@ To run this project locally, you need to have Node.js and npm installed on your 
    ```bash
    git clone [https://github.com/yourusername/task-website.git](https://github.com/Me-cha/LANDING-PAGE.git)
 
-# Navigate to the project directory
+2. Navigate to the project directory
 cd task-website
 
-# Install the dependencies
+3. Install the dependencies
 npm install
 
-# Start the development server
+4. Start the development server
 npm start
 
-# Open http://localhost:3000 in your web browser to view the project locally
+Open http://localhost:3000 in your web browser to view the project locally
