@@ -27,7 +27,7 @@ To run this project locally, you need to have Node.js and npm installed on your 
 
 1. Clone the GitHub repository:
    ```bash
-   git clone [https://github.com/yourusername/task-website.git](https://github.com/Me-cha/LANDING-PAGE.git)
+   git clone https://github.com/Me-cha/LANDING-PAGE.git
 
 2. Navigate to the project directory
 cd task-website
