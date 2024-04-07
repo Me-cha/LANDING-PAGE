@@ -19,7 +19,7 @@ Check out the live site [here](https://velvety-starlight-d43404.netlify.app/).
 
 ## GitHub Repository
 
-The source code for this project can be found on GitHub at [(https://github.com/Me-cha/LANDING-PAGE)].
+The source code for this project can be found on GitHub at [Landing-Page](https://github.com/Me-cha/LANDING-PAGE).
 
 ## Installation
 
@@ -27,23 +27,16 @@ To run this project locally, you need to have Node.js and npm installed on your 
 
 1. Clone the GitHub repository:
    ```bash
-   git clone https://github.com/yourusername/task-website.git
-Navigate to the project directory:
+   git clone [https://github.com/yourusername/task-website.git](https://github.com/Me-cha/LANDING-PAGE.git)
 
+
+2.Navigate to the project directory:
 bash
-Copy code
 cd task-website
-Install the dependencies:
-
+3.Install the dependencies:
 bash
-Copy code
 npm install
-Start the development server:
-
+4.Start the development server:
 bash
-Copy code
 npm start
 Open http://localhost:3000 in your web browser to view the project locally.
-
-Usage
-Feel free to explore the project and make any modifications as needed. If you have any suggestions or feedback, please don't hesitate to open an issue or submit a pull request.
