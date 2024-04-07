@@ -2,7 +2,10 @@ import React from "react";
 
 const ExploreSection = () => {
   return (
-    <div className="flex flex-col items-center bg-[#bcdeff] border-y-2 border-black text-center w-full py-8 sm:py-8  sm:px-0 px-1">
+    <div
+      className="flex flex-col items-center bg-[#bcdeff] border-y-2 border-black text-center w-full py-8 sm:py-8  sm:px-0 px-1"
+      data-color="#ffffff"
+    >
       <h1 className="text-4xl sm:text-8xl font-[Mignon-Regular] font-[550] ">
         Take your mind
         <br /> in new directions.

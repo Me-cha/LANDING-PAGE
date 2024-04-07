@@ -47,7 +47,10 @@ const Testimony = () => {
   };
 
   return (
-    <div className="flex flex-col items-center text-center w-full py-8 sm:py-5 sm:mt-10 sm:px-0 px-1">
+    <div
+      className="flex flex-col items-center text-center w-full py-8 sm:py-5 sm:mt-10 sm:px-0 px-1"
+      data-color="#ffffff"
+    >
       <h1 className="text-4xl sm:text-6xl font-[Mignon-Regular] font-medium ">
         Why I'm a Medium Member...
       </h1>

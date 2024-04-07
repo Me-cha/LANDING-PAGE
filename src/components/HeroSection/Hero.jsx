@@ -2,7 +2,10 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center text-center bg-[#4478fe] w-full text-white border-b-2 py-8 sm:py-32">
+    <div
+      className="flex flex-col items-center text-center bg-[#4478fe] w-full text-white border-b-2 py-8 sm:py-32 mt-10 sm:mt-0"
+      data-color="#4478fe"
+    >
       <h1 className="text-4xl sm:text-9xl font-[Mignon-Regular] font-medium ">
         Fuel Great Thinking.
       </h1>

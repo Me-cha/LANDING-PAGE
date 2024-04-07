@@ -5,7 +5,10 @@ import React from "react";
 
 const Feature = () => {
   return (
-    <div className="flex flex-col sm:flex-row items-center text-center bg-[#4478fe] w-full text-white py-8">
+    <div
+      className="flex flex-col sm:flex-row items-center text-center bg-[#4478fe] w-full text-white py-8"
+      data-color="#4478fe"
+    >
       <div className="flex flex-col items-center sm:items-start text-center sm:text-left px-8 flex-grow">
         <h1 className="text-5xl font-[Mignon-Regular] font-medium ">
           Get unlimited access to every story.

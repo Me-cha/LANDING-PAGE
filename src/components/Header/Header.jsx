@@ -14,13 +14,30 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import MediumLogoWhite from "../../assets/images/mediumLogoWhite.png";
+import MediumLogoBlack from "../../assets/images/mediumLogoBlack.png";
 
 const drawerWidth = 240;
 const navItems = ["Our Story", "Membership", "Write", "Sign In"];
 
 function Header(props) {
   const { window } = props;
+  const { color } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+
+  const getStylesBasedOnColor = () => {
+    if (color === "#ffffff") {
+      return {
+        textColor: "black",
+        logo: MediumLogoBlack,
+      };
+    } else {
+      return {
+        textColor: "white",
+        logo: MediumLogoWhite,
+      };
+    }
+  };
+  const { textColor, logo } = getStylesBasedOnColor();
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -67,8 +84,9 @@ function Header(props) {
       <AppBar
         component="nav"
         sx={{
-          backgroundColor: "#4478fe",
+          backgroundColor: color,
           borderBottom: "2px solid white",
+          transition: "background-color 0.5s ease",
         }}
       >
         <Toolbar>
@@ -82,9 +100,10 @@ function Header(props) {
             <MenuIcon />
           </IconButton>
           <img
-            src={MediumLogoWhite}
+            src={logo}
             alt="Medium Logo"
             style={{ height: "35px" }}
+            className="sm:mx-0 mx-[130px]"
           />
           <Typography
             variant="h6"
@@ -98,6 +117,7 @@ function Header(props) {
               fontFamily: "Mignon-Regular",
               fontSize: 40,
               fontWeight: "semiBold",
+              color: textColor,
             }}
           >
             Medium
@@ -107,10 +127,10 @@ function Header(props) {
               <Button
                 key={item}
                 sx={{
-                  color: "#fff",
                   mr: 2,
                   fontWeight: 300,
                   fontFamily: "Lexend",
+                  color: textColor,
                 }}
               >
                 {item}
